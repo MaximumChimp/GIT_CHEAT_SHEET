@@ -1,0 +1,28 @@
+#create a new repository on the command line
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MaximumChimp/GIT_CHEAT_SHEET.git
+git push -u origin main
+
+# Or push an existing repository from the command line
+
+git remote add origin https://github.com/MaximumChimp/GIT_CHEAT_SHEET.git
+git branch -M main
+git push -u origin main
+
+#Errors encountered while pushing codes to the repository
+
+error: failed to push some refs to 'https://github.com/MaximumChimp/KASH.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+This error needs to pull to the repository
+
+#Solution
+git pull --rebase
